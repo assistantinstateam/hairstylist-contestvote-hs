@@ -12,7 +12,7 @@ const languages = [
 ];
 
 export default function CustomLanguageSelect() {
-  const [selected, setSelected] = useState('en');
+  const [selected, setSelected] = useState('ko');
   const [isReady, setIsReady] = useState(false);
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);

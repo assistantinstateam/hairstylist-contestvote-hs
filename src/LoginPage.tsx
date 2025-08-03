@@ -56,7 +56,7 @@ export default function LoginPage() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4 py-6 max-w-md mx-auto">
-            <h1 className="text-3xl font-bold text-gray-800 mb-10">Log in to vote</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-10">투표하려면 로그인하세요</h1>
 
             <form
                 onSubmit={handleSubmit(onSubmit)}
@@ -65,7 +65,7 @@ export default function LoginPage() {
                 <div className='w-full'>
                     <input
                         type="email"
-                        placeholder="Email ID"
+                        placeholder="이메일 아이디"
                         {...register('email')}
                         className="p-3 mb-2 border w-full border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-gray-500"
                     />
@@ -75,7 +75,7 @@ export default function LoginPage() {
                 <div className='w-full'>
                     <input
                         type="password"
-                        placeholder="Password"
+                        placeholder="비밀번호"
                         {...register('password')}
                         className="p-3 mb-2 border w-full border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-gray-500"
                     />
@@ -103,30 +103,30 @@ export default function LoginPage() {
             <div className="flex flex-col sm:flex-row justify-between items-center w-full text-sm text-gray-600 gap-3 mb-6">
                 <p className="flex items-center font-medium">
                     <span className="inline-block bg-orange-500 h-4 w-4 rounded-sm mr-2"></span>
-                    Secure access
+                   보안 액세스
                 </p>
                 <div className="flex items-center gap-2">
                     <Link to="#" className="hover:underline font-medium">
-                        Find ID
+                        ID 찾기
                     </Link>
                     <span>|</span>
                     <Link to="#" className="hover:underline font-medium">
-                        Find password
+                       비밀번호 찾기
                     </Link>
                 </div>
             </div>
 
-            <p className="text-gray-700 mb-4 font-medium">Log in with your SNS account</p>
+            <p className="text-gray-700 mb-4 font-medium">SNS 계정으로 로그인하세요</p>
 
             <div className="flex gap-4">
                 <button className="w-14 h-14 bg-[#03c75a] text-white font-bold rounded-lg shadow flex items-center justify-center text-lg">
                     N
                 </button>
                 <button className="w-14 h-14 bg-gradient-to-r from-blue-500 via-red-500 to-yellow-400 text-white font-bold rounded-lg shadow flex items-center justify-center text-xs">
-                    Daumn
+                    다운
                 </button>
                 <button className="w-14 h-14 bg-yellow-400 text-black font-bold rounded-lg shadow flex items-center justify-center text-xs">
-                    TALK
+                    말하다
                 </button>
                 <button className="w-14 h-14 bg-[#ff4444] text-white font-bold rounded-lg shadow flex items-center justify-center text-lg">
                     N
